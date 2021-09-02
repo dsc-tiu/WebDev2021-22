@@ -1,0 +1,25 @@
+.dark{
+    background: #171717;
+}
+.dark .nav{
+    color:white;
+}
+.dark .item{
+    border-color: cornsilk;
+    color: cornsilk;
+}
+.dark .item:hover, .dark .item.active{
+    background:cornsilk;
+    color: black
+}
+.dark .grid img{
+    filter: brightness(0.8);
+}
+.dark .grid img:hover{
+    transform: scale(1.01);
+    border-color: rgb(201, 181, 27);
+}
+
+.dark .footer{
+    color: cornsilk;
+}

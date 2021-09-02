@@ -1,0 +1,10 @@
+body{
+    background: #e5e5e5
+}
+.item:hover, .item.active{
+    background:darkblue;
+    color: whitesmoke
+}
+.grid img{
+    box-shadow: 0 0 5px rgb(138, 138, 138);
+}
