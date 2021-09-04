@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="#" id="validateForm" name="validateForm" >
+        <h2>Validation Form</h2>
+        <fieldset class="inputDiv">
+            <legend>Name*</legend>
+                <input type="text" placeholder="Enter your Name" id="nameinput" class="input"  name="name" >
+                <div class="errMessage" id="nameValidator">Enter a valid name</div>
+        </fieldset>
+
+
+        <fieldset class="inputDiv">
+            <legend>Email*</legend>
+                <input type="email" placeholder="Enter your Email" id="emailinput" class="input" name="email" >
+                <div class="errMessage" id="emailValidator">Enter a valid Email</div>
+        </fieldset>
+
+        
+        <fieldset class="inputDiv">
+            <legend>Password*</legend>
+             <div class="flexDiv">
+                <input type="password" placeholder="Enter your Name" id="passwordinput" class="input" name="password" minlength="6" maxlength="20" >
+                <img src="icon.svg" alt="" id="eye">
+            </div>
+                <div class="errMessage" id="passwordValidator">Enter a valid password</div>
+            
+        </fieldset>
+       <!-- <input type="submit" value="Register"> -->
+       <button id="submitBtn">Register</button>
+
+
+    </form>
+    <div id="ResultDiv">
+        <h3>Your Account was registered ! </h3>
+        <p id="showName"></p>
+        <p id="showEmail"></p>
+        <p id="showPassword"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
