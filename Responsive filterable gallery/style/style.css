@@ -2,9 +2,6 @@
     margin: 0;
     padding: 0;
 }
-body{
-    min-height: 100vh;
-}
 .nav{
     padding: 15px;
     display: flex;
@@ -45,10 +42,16 @@ body{
     width: 300px;
     margin: 5px;
 }
-
-.grid img:hover{
-    transform: scale(1.01);
+.grid:hover > img{
+    filter: grayscale(1);
+}
+.grid:hover > img:hover{
+    transform: scale(1.1);
+    transition: 0.4s ease-in-out;
+    z-index: 99;
     border: 2px solid rgb(0, 0, 80);
+    filter: brightness(1);
+    filter: grayscale(0);
 }
 .footer{
     height: 120px;

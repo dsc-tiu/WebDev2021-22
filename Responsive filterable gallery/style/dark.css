@@ -15,11 +15,17 @@
 .dark .grid img{
     filter: brightness(0.8);
 }
-.dark .grid img:hover{
-    transform: scale(1.01);
-    border-color: rgb(201, 181, 27);
+.dark .grid:hover > img{
+    filter: grayscale(1);
+    filter: brightness(0.8);
 }
-
+.dark .grid:hover > img:hover{
+    transform: scale(1.1);
+    transition: 0.4s ease-in-out;
+    z-index: 99;
+    border-color: rgb(201, 181, 27);
+    filter: brightness(1);
+}
 .dark .footer{
     color: cornsilk;
 }
