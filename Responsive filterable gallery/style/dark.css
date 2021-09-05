@@ -17,7 +17,6 @@
 }
 .dark .grid:hover > img{
     filter: grayscale(1);
-    filter: brightness(0.8);
 }
 .dark .grid:hover > img:hover{
     transform: scale(1.1);
