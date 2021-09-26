@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+<section class="mainWrapper">
+    <div class="weatherWrapper">
+            <div class="inputDiv">
+            <input type="text" id="cityName" placeholder="Enter City:">
+            <span id="crossBtn">&times;</span>
+            </div>
+            <section class="weatherCard" id="weatherCard">
+                <div class="overlay"></div>
+                <!-- <img src="https://image.freepik.com/free-vector/beautiful-mountain-chain-landscape-sundown-with-birds_23-2148269223.jpg" alt=""> -->
+                <img src="images/clearDay.jpg" id="weatherImg">
+                
+                <div class="temperature">
+                
+                    <div id="location"><i class="fas fa-map-marker"></i>&nbsp;&nbsp;City, Country </div>
+                    <span id="temp"> --</span>
+                    <h2 id="condition">--</h2>            
+                </div>
+                <div class="otherData">
+                    <div class="dataDiv">
+                        <span class="Param">Humidity</span>
+                        <span id="humidity">--</span>
+                    </div>
+                    <div class="dataDiv">
+                        <span class="Param">Min Temp</span>
+                        <span id="minTemp">--</span>
+                    </div>
+                    <div class="dataDiv">
+                        <span class="Param">Max Temp</span>
+                        <span id="maxTemp">--</span>
+                    </div>
+                    <div class="dataDiv">
+                        <span class="Param">Wind</span>
+                        <span id="windSpeed">--</span>
+                    </div>
+                </div>
+            </section>
+            <div class="btnDiv">
+                <div class="logShow btn" id="logShow">Show Logs</div>
+                <div class="bookMark btn" id="bookMark" onclick="addBookmark(document.getElementById('location').innerText)">BookMark</div>
+                <div class="Live btn" id="Live" >Check Live</div>
+        
+            </div>
+    </div>
+    <div class="tableWrapper" id="tableWrapper">
+        <table id="logTable">
+            <tr class="tableHead"><th>Place</th> <th>Condition</th> <th>Min Temp</th> <th>Max Temp</th> <th> Humidity</th> <th>Wind Speed</th><th>BookMark</th></tr>
+           
+        </table>
+    </div>
+    
+</section>
+
+
+<section class="bookMarkWrapper">
+        <div class="title">BookMarked <i class="fas fa-bookmark"></i></div>
+        <div class="bookMarkProfileWrapper" id="bookMarkProfileWrapper">
+        
+        </div>
+    </section>
+
+</body>
+
+<script src="script.js"></script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
