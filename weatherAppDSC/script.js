@@ -56,7 +56,7 @@
   
     function fetchWeather(city)
     {    var cityQuery=city||cityName.value
-        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityQuery}&units=metric&appid=aa8fafad6088c959ffa5045db2e9d1a8`)
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityQuery}&units=metric&appid={API_KEY}`)
         .then(res=> res.json())
         .then(data=> showData(data))
         .catch(err=>
