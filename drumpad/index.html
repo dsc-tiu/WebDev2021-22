@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+   <audio id="playList"></audio>
+<div class="boxes center">
+    <div class="headerButtonWrapper">
+        <div id="recordBtn">
+            <div class="recordBtnOuter">
+                <span class="recordBtnInner"></span>
+            </div>
+            <div class="recordState">Start Recording</div>
+            </div>
+    </div>
+
+
+    <div class="pads">
+        <div class="padRow">
+            <div id="pad1" class="padbox center" data-key='r'>
+                <div class="innerCircle" style="background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(121,9,47,1) 32%, rgba(0,212,255,1) 100%);"></div>
+                <span>R</span>
+                <audio class="sound" src="./sounds/SD0025.mp3"></audio>
+            </div>
+            <div id="pad2" class="padbox center" data-key='t'>
+                <div class="innerCircle" style="background: linear-gradient(to right, #373b44, #4286f4);"></div>
+                <span>T</span>
+                <audio class="sound" src="./sounds/SD0010.mp3"></audio>
+            </div>
+            <div id="pad3" class="padbox center" data-key='y'>
+                <div class="innerCircle" style=" background: linear-gradient(to right, #ff0099, #493240);"></div>
+                <span>Y</span>
+                <audio class="sound" src="./sounds/SD0000.mp3"></audio>
+            </div>
+    
+            <div id="pad4" class="padbox center" data-key='u'>
+                <div class="innerCircle" style="background: linear-gradient(to right, #f12711, #f5af19);"></div>
+                <span>U</span>
+                <audio class="sound" src="./sounds/RS.mp3"></audio>
+            </div>
+        </div>
+
+        <div class="padRow">
+            <div id="pad5" class="padbox center" data-key='f'>
+                <div class="innerCircle" style="background: linear-gradient(to right, #525252, #3d72b4);"></div>
+                <span>F</span>
+                <audio class="sound" src="./sounds/OH25.mp3"></audio>
+            </div>
+            <div id="pad6" class="padbox center" data-key='g'>
+                <div class="innerCircle" style="background: linear-gradient(to right, #304352, #d7d2cc);"></div>
+                <span>G</span>
+                <audio class="sound" src="./sounds/MA.mp3"></audio>
+            </div>
+    
+            <div id="pad7" class="padbox center" data-key='h'>
+                <div class="innerCircle" style="background: linear-gradient(to right, #16222a, #3a6073);"></div>
+                <span>H</span>
+                <audio class="sound" src="./sounds/CY0010.mp3"></audio>
+            </div>
+            <div id="pad8" class="padbox center" data-key='j'>
+                <div class="innerCircle" style="background:linear-gradient(to right, #bb8b2c, #FCF6BA);"></div>
+                <span>J</span>
+                <audio class="sound" src="./sounds/CH.mp3"></audio>
+            </div>
+        </div>
+
+        <div class="padRow">
+            <div id="pad9" class="padbox center" data-key='c'>
+                <div class="innerCircle" style=" background: linear-gradient(to right, #333333, #dd1818);"></div>
+                <span>C</span>
+                
+                <audio class="sound" src="./sounds/CB.mp3"></audio>
+            </div>
+        
+            <div id="pad10" class="padbox center" data-key='v'>
+                <div class="innerCircle" style="background: linear-gradient(to right, #aaffa9, #11ffbd);"></div>
+                <span>V</span>
+                <audio class="sound" src="./sounds/BD0010.mp3"></audio>
+            </div>
+            <div id="pad11" class="padbox center" data-key='b'>
+                <div class="innerCircle" style="background: linear-gradient(to right, #4b6cb7, #182848);"></div>
+                <span>B</span>
+                <audio class="sound" src="./sounds/BD0000.mp3"></audio>
+            </div>
+            <div id="pad12" class="padbox center" data-key='n'> 
+                <div class="innerCircle" style=" background: linear-gradient(to right, #aa076b, #61045f);"></div>
+                <span>N</span>
+                <audio class="sound" src="./sounds/CP.mp3"></audio>
+            </div>
+        </div>
+  
+    </div>
+
+
+    
+<button id="playBtn">Play Recording</button>
+
+</div> 
+
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
