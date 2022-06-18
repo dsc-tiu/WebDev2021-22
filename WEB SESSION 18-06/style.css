@@ -1,0 +1,53 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img
+{
+    height: 540px;
+    width: 530px;
+}
+.spanElement
+{
+    font-size: 25px;
+}
+
+#span3
+{
+    color: red;
+    font-size: 50px;
+}
+
+.para
+{
+    background: green;
+    color: #fff;
+}
+
+
+.para,#h1
+{
+    background: red;
+    color: yellow;
+    
+}
+#h1
+{
+    color: #fff;
+}
+
+body
+{
+    height: 100vh;
+}
+
+button
+{
+    margin: 20px 10px 5px 8px;
+    padding: 12px 20px;
+
+    
+}
